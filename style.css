@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#calculator {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  font-family: 'Anton', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 37px;
+}
+
+.buttons .button {
+  height: 40px;
+  margin: 2px 11px;
+  width: 93px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: -21px;
+}
+
+#textarea {
+  height: 6vw;
+  width: 47vw;
+  font-size: 40px;
+  border: 3px solid black;
+}
+
+.row {
+  margin: 10px;
+}
+
+.equal {
+  background-color: #008CBA;
+  color: white;
+}
+
+.grey {
+  background-color: #bbbbc6;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.row :hover {
+  background-color: #e3c0c0;
+  color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+#info {
+  background-color: burlywood;
+  height: 20vh;
+  width: 50vw;
+  display: inline-block;
+  position: absolute;
+  left: 26%;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+}
+
+@media screen and (max-width:800px) {
+
+  #calculator {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+  }
+
+  #textarea {
+    margin-top: -20px;
+    height: 7vh;
+    width: 90vw;
+    font-size: 20px;
+    border: 3px solid black;
+  }
+
+  .buttons .button {
+    height: 30px;
+    margin: 1px 0px;
+    width: 52.5px;
+  }
+
+  .buttons {
+    width: 100vw;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+  .row {
+    margin: 12px;
+  }
+
+  #info {
+    margin-top: -40px;
+    height: 40vh;
+    width: 100vw;
+    left: 1%;
+    font-size: 27px;
+  }
+}
